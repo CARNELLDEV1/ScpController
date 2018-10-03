@@ -1,0 +1,10 @@
+C:\Carell Source\repos\ScpController\ScpController\obj\Debug\ScpController.csprojAssemblyReference.cache
+C:\Carell Source\repos\ScpController\ScpController\obj\Debug\ScpController.csproj.CoreCompileInputs.cache
+C:\Carell Source\repos\ScpController\ScpController\bin\Debug\WinSCP.exe
+C:\Carell Source\repos\ScpController\ScpController\bin\Debug\ScpController.exe.config
+C:\Carell Source\repos\ScpController\ScpController\bin\Debug\ScpController.exe
+C:\Carell Source\repos\ScpController\ScpController\bin\Debug\ScpController.pdb
+C:\Carell Source\repos\ScpController\ScpController\bin\Debug\WinSCPnet.dll
+C:\Carell Source\repos\ScpController\ScpController\obj\Debug\ScpController.csproj.CopyComplete
+C:\Carell Source\repos\ScpController\ScpController\obj\Debug\ScpController.exe
+C:\Carell Source\repos\ScpController\ScpController\obj\Debug\ScpController.pdb
