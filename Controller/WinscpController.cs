@@ -121,25 +121,25 @@ namespace ScpController.Controller
                      "[smartscan]," +
                      "[road])" +
                 "VALUES(" +
-                    $"{workitem.JobNumber}" + "," +
-                    $"{workitem.JobFolder}" + "," +
-                    $"{workitem.Status}" + "," +
+                    $"'{workitem.JobNumber}'" + "," +
+                    $"'{workitem.JobFolder}'" + "," +
+                    $"'{workitem.Status}'" + "," +
                     $"{workitem.EstWork}" + "," +
                     $"{workitem.EstCost}" + "," +
-                    $"{workitem.InContract}" + "," +
+                    $"'{workitem.InContract}'" + "," +
                     $"'{workitem.Area}'" + "," +
-                    $"{workitem.DateAdded}" + "," +
-                    $"{workitem.Assigned}" + "," +
-                    $"{workitem.AssignedTo}" + "," +
-                    $"{workitem.DataStarted}" + "," +
-                    $"{workitem.ImageUploaded}" + "," +
-                    $"{workitem.ReportUploaded}" + "," +
-                    $"{workitem.CommitedToMaster}" + "," +
-                    $"{workitem.ClientEmailed}" + "," +
+                    $"'{workitem.DateAdded}'" + "," +
+                    $"'{workitem.Assigned}'" + "," +
+                    $"'{workitem.AssignedTo}'" + "," +
+                    $"'{workitem.DataStarted}'" + "," +
+                    $"'{workitem.ImageUploaded}'" + "," +
+                    $"'{workitem.ReportUploaded}'" + "," +
+                    $"'{workitem.CommitedToMaster}'" + "," +
+                    $"'{workitem.ClientEmailed}'" + "," +
                     $"{workitem.DateCompleted}" + "," +
                     $"{workitem.DateAssigned}" + "," +
                     $"{workitem.DataSurveyed}" + "," +
-                    $"{workitem.Smartscan}" + "," +
+                    $"'{workitem.Smartscan}'" + "," +
                     $"'{workitem.Road}'" + ");";
 
             Console.WriteLine(sqlQuery); ;
