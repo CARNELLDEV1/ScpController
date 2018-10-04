@@ -63,7 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\EmailController.cs" />
+    <Compile Include="Controller\MailSender.cs" />
     <Compile Include="Controller\SqlserverController.cs" />
     <Compile Include="Controller\WinscpController.cs" />
     <Compile Include="Data\WorkItem.cs" />

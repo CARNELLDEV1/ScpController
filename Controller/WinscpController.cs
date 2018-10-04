@@ -25,8 +25,6 @@ namespace ScpController.Controller
         public SessionOptions sessionOptions;
         public Protocol Protocol { get; set; }
 
-        public EmailController EmailController { get; set; }
-
         #endregion
 
         #region Constructor
@@ -82,13 +80,15 @@ namespace ScpController.Controller
                         WorkItem workItem = new WorkItem(file);
                         UpdateWorkItem(workItem);
 
-                        string localFile = Path.Combine(LocalPath, file.Name);
+                        RemotePath = ConfigurationManager.AppSettings["RemotePath"];
+                        string localFile = RemotePath + "/" + file.Name;
                         transferResult = session.GetFiles(file.FullName, localFile, false, transferOptions);
                         transferResult.Check();
-                        removeResult = session.RemoveFiles(file.Name);
-                        //EmailController.SendEmail(file.Name);
+                        removeResult = session.RemoveFiles(localFile);
+                        MailSender.SendNotification(fileName);
                     }
                 }
+
 
                 session.Close();
             }
